@@ -15,18 +15,19 @@ VALUES
 ('https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/26/8d/bb/268dbb59-4df1-36c3-525e-8d24c921ee25/23UMGIM04594.rgb.jpg/600x600bb.jpg', 'Messy'),
 ('https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/cc/f1/7f/ccf17ff9-c0cb-f4fe-06b5-a7ee44d52a95/0.jpg/600x600bb.jpg', 'Ã‰ disso que eu me alimento'),
 ('https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/d5/5f/28/d55f28f4-610c-ee81-dc16-a01cda46bbc4/886443546264.jpg/600x600bb.jpg', 'BAD'),
-('https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/92/9f/69/929f69f1-9977-3a44-d674-11f70c852d1b/24UMGIM36186.rgb.jpg/600x600bb.jpg', 'HIT ME HARD AND SOFT');
+('https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/92/9f/69/929f69f1-9977-3a44-d674-11f70c852d1b/24UMGIM36186.rgb.jpg/600x600bb.jpg', 'HIT ME HARD AND SOFT'),
+('https://a1.mzstatic.com/r40/Music116/v4/a6/85/b9/a685b9f8-dad3-2ed7-58b2-ab7f64304505/23UMGIM58157.rgb.jpg', 'Midnights');
 INSERT INTO PLANO_ASSINATURA(nome, valor, descricao) VALUES
-('Free',       0,  'Plano gratuito com anÃºncios e funcionalidades limitadas'),
-('Premium',    20, 'Plano com todos os benefÃ­cios: sem anÃºncios, download offline e qualidade mÃ¡xima'),
+('Free',       0,  'Plano gratuito com anúncios e funcionalidades limitadas'),
+('Premium',    20, 'Plano com todos os benefícios: sem anúncios, download offline e qualidade máxima'),
 ('Student',    10, 'Plano Premium com desconto para estudantes'),
-('Duo',        27, 'Plano Premium para 2 contas no mesmo endereÃ§o'),
-('Family',     35, 'Plano Premium para atÃ© 6 contas da mesma famÃ­lia'),
+('Duo',        27, 'Plano Premium para 2 contas no mesmo endereço'),
+('Family',     35, 'Plano Premium para até 6 contas da mesma família'),
 ('Business',   50, 'Plano para uso empresarial com recursos adicionais'),
-('Artist Pro', 30, 'Plano para artistas com ferramentas de anÃ¡lise e distribuiÃ§Ã£o'),
-('Kids',        5, 'Plano infantil com conteÃºdo curado para crianÃ§as'),
+('Artist Pro', 30, 'Plano para artistas com ferramentas de análise e distribuição'),
+('Kids',        5, 'Plano infantil com conteúdo curado para crianças'),
 ('Podcast+',   15, 'Plano com acesso premium a podcasts exclusivos'),
-('HiFi',       25, 'Plano com qualidade de Ã¡udio lossless');
+('HiFi',       25, 'Plano com qualidade de áudio lossless');
 
 
 INSERT INTO USUARIO(nome, apelido, id_plano_assinatura) VALUES
@@ -48,11 +49,11 @@ INSERT INTO GRAVADORA(nome) VALUES
 ('Parlophone'),         -- 3  Radiohead
 ('Republic Records'),   -- 4  Taylor Swift / Conan Gray
 ('30PRAUM'),            -- 5  Urias / gravadora BR
-('Sony Music'),         -- 6  genÃ©rica
-('Universal Music'),    -- 7  genÃ©rica
+('Sony Music'),         -- 6  genérica
+('Universal Music'),    -- 7  genérica
 ('Columbia Records'),   -- 8  Nothing But Thieves
 ('Interscope Records'), -- 9  Charli XCX
-('Warner Music'),       -- 10 genÃ©rica
+('Warner Music'),       -- 10 genérica
 ('Mataderos Records');  -- 11 Urias (label original)
 
 
@@ -90,9 +91,10 @@ INSERT INTO ALBUM(nome, data_lancamento, quantidade_faixas, id_artista, id_capa)
 ('The Wild Youth EP',                               '2018-04-13',  5, 11, 11),
 ('Broken Machine (Deluxe)',                         '2017-09-08', 15, 12, 12),
 ('Messy',                                           '2024-10-11', 11, 13, 13),
-('Ã‰ disso que eu me alimento',                      '2025-11-19', 12, 14, 14),
+('É disso que eu me alimento',                      '2025-11-19', 12, 14, 14),
 ('BAD',                                             '1987-09-07', 11, 15, 15),
-('Hit me Hard and Soft',                            '2024-05-07', 10, 16, 16);
+('Hit me Hard and Soft',                            '2024-05-07', 10, 16, 16),
+('Midnights',                                       '2022-05-12', 22, 4, 17);
 
 
 
@@ -125,8 +127,8 @@ INSERT INTO MUSICA(nome, id_album) VALUES
 -- CARRANCA
 ('A Liberdade (Intro)',   6),  -- id 21
 ('Quando A Fonte Secar',  6),  -- id 22
-('VÃ©nus Noir',            6),  -- id 23
-('EtiÃ³pia',               6),  -- id 24
+('Vênus Noir',            6),  -- id 23
+('Etiópia',               6),  -- id 24
 -- You'll Be Alright, Kid
 ('Eternity',              7),  -- id 25
 ('Ordinary',              7),  -- id 26
@@ -157,12 +159,13 @@ INSERT INTO MUSICA(nome, id_album) VALUES
 -- Messy
 ('The Hardest Part',     13),  -- id 46
 ('Dangerously Easy',     13),  -- id 47
--- Ã‰ disso que eu me alimento
+-- É disso que eu me alimento
 ('Pq Vc NÃ£o me liga?',   14),  -- id 48
 ('Oi Linda',             14),  -- id 49
 -- BAD
 ('Dirty Diana',          15),  -- id 50
 ('Smooth Criminal',      15),  -- id 51
+-- HIT ME HARD AND SOFT
 ('Blue',                 16),  -- id 52
 ('BITTERSUIT',           16);  -- id 53
 
@@ -219,52 +222,53 @@ INSERT INTO MEMBRO(nome, nascimento, nacionalidade, id_artista) VALUES
 ('Mark Barry',          1987, 'Estadunidense', 1),
 ('Miguel Briseno',      1989, 'Estadunidense', 1),
 
-('Thom Yorke',          1968, 'BritÃ¢nico',     3),
-('Jonny Greenwood',     1971, 'BritÃ¢nico',     3),
-('Colin Greenwood',     1969, 'BritÃ¢nico',     3),
-('Ed O''Brien',         1968, 'BritÃ¢nico',     3),
-('Philip Selway',       1967, 'BritÃ¢nico',     3),
+('Thom Yorke',          1968, 'Britânico',     3),
+('Jonny Greenwood',     1971, 'Britânico',     3),
+('Colin Greenwood',     1969, 'Britânico',     3),
+('Ed O''Brien',         1968, 'Britânico',     3),
+('Philip Selway',       1967, 'Britânico',     3),
 
-('Conor Mason',         1993, 'BritÃ¢nico',     12),
-('Joe Langridge-Brown', 1992, 'BritÃ¢nico',     12),
-('Dominic Craik',       1992, 'BritÃ¢nico',     12),
-('Philip Blake',        1992, 'BritÃ¢nico',     12);
+('Conor Mason',         1993, 'Britânico',     12),
+('Joe Langridge-Brown', 1992, 'Britânico',     12),
+('Dominic Craik',       1992, 'Britânico',     12),
+('Philip Blake',        1992, 'Britânico',     12);
 
 
 INSERT INTO PLAYLIST(nome, id_usuario) VALUES
 ('Brasileiras',      1),
 ('Indie Vibes',      2),
-('Rock ClÃ¡ssico',    3),
+('Rock Clássico',    3),
 ('Pop Hits',         4),
 ('Sad Hours',        5),
 ('Chill Sunday',     6),
 ('Workout Mix',      7),
 ('Late Night Drive', 8),
 ('Hyperpop Only',    9),
-('Favoritas',        10);
+('Favoritas',        10),
+('Melhores Charli xcx', 7);
 
 
 INSERT INTO MUSICA_PLAYLIST(id_playlist, id_musica) VALUES
-(1, 21),  -- Brasileiras â†’ A Liberdade (Intro)
-(1, 22),  -- Brasileiras â†’ Quando A Fonte Secar
-(2, 1),   -- Indie Vibes â†’ Love Like Ghosts
-(2, 2),   -- Indie Vibes â†’ Until the Night Turns
-(3, 9),   -- Rock ClÃ¡ssico â†’ Airbag
-(3, 10),  -- Rock ClÃ¡ssico â†’ Paranoid Android
-(4, 5),   -- Pop Hits â†’ all-american bitch
-(4, 6),   -- Pop Hits â†’ bad idea right?
-(5, 17),  -- Sad Hours â†’ Movies
-(5, 18),  -- Sad Hours â†’ Disaster
-(6, 13),  -- Chill Sunday â†’ Fortnight
-(6, 14),  -- Chill Sunday â†’ But Daddy I Love Him
-(7, 33),  -- Workout Mix â†’ tears
-(7, 34),  -- Workout Mix â†’ backseat
-(8, 37),  -- Late Night Drive â†’ Porch Light
-(8, 38),  -- Late Night Drive â†’ The Great Divide
-(9, 33),  -- Hyperpop Only â†’ tears
-(9, 34),  -- Hyperpop Only â†’ backseat
-(10, 5),  -- Favoritas â†’ all-american bitch
-(10, 21); -- Favoritas â†’ A Liberdade (Intro)
+(1, 21),  -- Brasileiras - A Liberdade (Intro)
+(1, 22),  -- Brasileiras - Quando A Fonte Secar
+(2, 1),   -- Indie Vibes - Love Like Ghosts
+(2, 2),   -- Indie Vibes - Until the Night Turns
+(3, 9),   -- Rock Clássico - Airbag
+(3, 10),  -- Rock Clássico - Paranoid Android
+(4, 5),   -- Pop Hits - all-american bitch
+(4, 6),   -- Pop Hits - bad idea right?
+(5, 17),  -- Sad Hours - Movies
+(5, 18),  -- Sad Hours - Disaster
+(6, 13),  -- Chill Sunday - Fortnight
+(6, 14),  -- Chill Sunday - But Daddy I Love Him
+(7, 33),  -- Workout Mix - tears
+(7, 34),  -- Workout Mix - backseat
+(8, 37),  -- Late Night Drive - Porch Light
+(8, 38),  -- Late Night Drive - The Great Divide
+(9, 33),  -- Hyperpop Only - tears
+(9, 34),  -- Hyperpop Only - backseat
+(10, 5),  -- Favoritas - all-american bitch
+(10, 21); -- Favoritas - A Liberdade (Intro)
 
 INSERT INTO FAIXA(numero, id_album) VALUES
 -- Strange Trails
@@ -283,7 +287,7 @@ INSERT INTO FAIXA(numero, id_album) VALUES
 (1, 7), (2, 7), (3, 7), (4, 7), (5, 7), (6, 7),
 -- Messy
 (1, 13), (2, 13), (3, 13), (4, 13), (5, 13),
--- Ã‰ disso que eu me alimento
+-- É disso que eu me alimento
 (1, 14), (2, 14), (3, 14), (4, 14), (5, 14),
 -- BAD
 (1, 15), (2, 15), (3, 15), (4, 15), (5, 15);
@@ -343,58 +347,58 @@ INSERT INTO LETRA(idioma, letra_original, traducao_BR, id_musica) VALUES
 
 
 INSERT INTO AVALIACAO(quantidade_estrelas, comentario, id_album, id_usuario) VALUES
-(5,   'Melhor Ã¡lbum da minha vida',                                                 1,  1),
-(4.5, 'GUTS Ã© perfeito do comeÃ§o ao fim, Olivia Ã© uma genia',                       2,  2),
-(5,   'OK Computer Ã© uma obra de arte atemporal',                                   3,  3),
-(4,   'The Anthology tem muita coisa boa, mas Ã© longo demais',                      4,  4),
-(4.5, 'Superache me quebrou emocionalmente de um jeito lindo',                      5,  5),
-(5,   'CARRANCA Ã© um marco da mÃºsica brasileira, Urias Ã© incrÃ­vel',                 6,  6),
-(4,   'Nothing But Thieves entregando muito nesse projeto',                          7,  7),
-(3.5, 'Interessante mas algumas faixas nÃ£o me convenceram',                          8,  8),
-(5,   'Pop 2 mudou o que eu entendia por mÃºsica pop',                                9,  9),
-(4,   'The Great Divide Ã© um retorno poderoso',                                     10, 10),
-(3.5, 'EP promissor mas curto demais',                                              11,  1),
-(4.5, 'Broken Machine Deluxe tem mÃºsicas incrÃ­veis',                                12,  2),
-(5,   'Messy Ã© o melhor Ã¡lbum de Charli, sem dÃºvida',                              13,  3),
-(4,   'Projeto experimental e corajoso',                                            14,  4),
-(5,   'BAD Ã© um clÃ¡ssico eterno do pop',                                            15,  5);
+(5,   'Állbum da minha vida',                                                 1,  1),
+(4.5, 'Tem vampire, tem nota boa',                                            2,  2),
+(3,   'Álbum estranho pra gente estranha',                                    3,  3),
+(5,   'Branca básica',                                                        4,  4),
+(4.5, 'Álbum mais maduro dele, é o único que não parece uma grande fanfic',   5,  5),
+(5,   'CARRANCA é um marco da música brasileira, Vontade de Voar arrasa',     6,  6),
+(3,   'Álbum lindo. Pena que desandou e só lança single ruim agora',          7,  7),
+(4.5, 'Oi galerinha fiquei sabendo que vocês gostam de Tame Impala',          8,  8),
+(2,   'Essa menina não sabe cantar e fica botando efeito na voz',             9,  9),
+(5,   'Álbum imaculado. Doors é um tiro no peito',                            10, 10),
+(3.5, 'EP promissor',                                                         11,  1),
+(3, 'É. Tem gente que gosta. Capa bonita',                                    12,  2),
+(2,   'Álbum mais ou menos. Capa horrorosa meu deus',                         13,  3),
+(4,   'Aborda tópicos sensíveis, capa linda',                                 14,  4),
+(4.5,   'Clássico do pop né, não tem muito o que dizer',                      15,  5);
 
 
 
 INSERT INTO ARTISTA_MUSICA(id_artista, id_musica, tipo_participacao) VALUES
--- Lord Huron (id 1) â†’ mÃºsicas 1 e 2
+-- Lord Huron (id 1) músicas 1 e 2
 (1,  1,  'Principal'),
 (1,  2,  'Principal'),
--- Olivia Rodrigo (id 2) â†’ mÃºsicas 5 e 6
+-- Olivia Rodrigo (id 2) músicas 5 e 6
 (2,  5,  'Principal'),
 (2,  6,  'Principal'),
--- Radiohead (id 3) â†’ mÃºsicas 9 e 10
+-- Radiohead (id 3) músicas 9 e 10
 (3,  9,  'Principal'),
 (3,  10, 'Principal'),
--- Taylor Swift (id 4) â†’ mÃºsicas 13 e 14
+-- Taylor Swift (id 4) músicas 13 e 14
 (4,  13, 'Principal'),
 (4,  14, 'Principal'),
--- Conan Gray (id 5) â†’ mÃºsicas 17 e 18
+-- Conan Gray (id 5)  músicas 17 e 18
 (5,  17, 'Principal'),
 (5,  18, 'Principal'),
--- Urias (id 6) â†’ mÃºsicas 21 e 22
+-- Urias (id 6)  músicas 21 e 22
 (6,  21, 'Principal'),
 (6,  22, 'Principal'),
--- Alex Warren (id 7) â†’ mÃºsicas 25 e 26
+-- Alex Warren (id 7)  músicas 25 e 26
 (7,  25, 'Principal'),
 (7,  26, 'Principal'),
--- Harry Styles (id 8) â†’ mÃºsicas 29 e 30
+-- Harry Styles (id 8)  músicas 29 e 30
 (8,  29, 'Principal'),
 (8,  30, 'Principal'),
--- Charli XCX (id 9) â†’ mÃºsicas 33 e 34
+-- Charli XCX (id 9)  músicas 33 e 34
 (9,  33, 'Principal'),
 (9,  34, 'Principal'),
--- Noah Karran (id 10) â†’ mÃºsicas 37 e 38
+-- Noah Karran (id 10)  músicas 37 e 38
 (10, 37, 'Principal'),
 (10, 38, 'Principal'),
--- Wild Youth (id 11) â†’ mÃºsicas 40 e 41
+-- Wild Youth (id 11)  músicas 40 e 41
 (11, 40, 'Principal'),
 (11, 41, 'Principal'),
--- Nothing But Thieves (id 12) â†’ mÃºsicas 42 e 43
+-- Nothing But Thieves (id 12) músicas 42 e 43
 (12, 42, 'Principal'),
 (12, 43, 'Principal');
