@@ -7,6 +7,7 @@ CREATE TABLE CAPA(
 CREATE TABLE MUSICA(
 	id SERIAL PRIMARY KEY,
 	nome VARCHAR(30),
+	id_album INT,
 	album INT
 );
 
