@@ -22,7 +22,7 @@ DB_CONFIG = {
     "host":     "localhost",
     "database": "Trabalho-Final",
     "user":     "postgres",
-    "password": "ruavagas27"
+    "password": "*******"
 }
 
 # ─── PALETA ───────────────────────────────────────────────────────────────────
