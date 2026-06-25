@@ -31,16 +31,17 @@ INSERT INTO PLANO_ASSINATURA(nome, valor, descricao) VALUES
 
 
 INSERT INTO USUARIO(nome, apelido, id_plano_assinatura) VALUES
-('Rafael',       'rafanduba',       2),
-('JoÃ£o Pedro',   'jottynha',        2),
-('Jader',        'olivas',          3),
-('Samuel Silva', 'samuel_silva',    5),
-('Alice',        'lili_gameplays',  1),
-('Danniel',      'danni',           2),
-('Arthur',       'tutu_do_rock',    4),
-('Samir',        'namorado',        2),
-('William',      'ruim_no_lol',     1),
-('Raulivan',     'prof_gente_boa',  4);
+('Rafael',       'rafanduba',        2),
+('João Pedro',   'princesa',         2),
+('Jader',        '*****_hedonista',  3),
+('Samuel Silva', 'samuel_silva',     5),
+('Alice',        'lili_gameplays',   1),
+('Danniel',      'danni',            2),
+('Samir',        'namorado',         2),
+('Arthur',       'taylor',           4),
+('William',      'swift',            1),
+('Raulivan',     'prof_gente_boa',   4);
+
 
 
 INSERT INTO GRAVADORA(nome) VALUES
