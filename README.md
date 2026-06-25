@@ -37,7 +37,7 @@ Trabalho final da disciplina de **Banco de Dados**, modelando um sistema de stre
 ### Fracas (precisam de uma entidade forte pra existir)
 `LETRA` · `AVALIACAO` · `SINGLE` · `FAIXA` · `PREVIEW` · `MEMBRO`
 
-### Tabelas Associativas (o N:M da nossa vida)
+### Tabelas Associativas (N:M)
 `MUSICA_PLAYLIST` · `ARTISTA_GENERO` · `ARTISTA_MUSICA`
 
 ---
@@ -75,19 +75,16 @@ apelido VARCHAR(30) UNIQUE
 Porque às vezes o aprendizado vem do erro:
 
 ```sql
--- Artista com -100 ouvintes? O banco não deixa.
+-- Artista com ouvintes negativos
 INSERT INTO ARTISTA (ouvintes_mensais) VALUES (-100);
 
--- Nota 3.7? Não existe meio ponto em 3.7. Rejeitado.
+-- Nota que não se encaixa no CHECK
 INSERT INTO AVALIACAO (quantidade_estrelas) VALUES (3.7);
 
--- Dois usuários com o mesmo apelido? O UNIQUE diz não.
+-- Dois usuários com o mesmo apelido
 INSERT INTO USUARIO (nome, apelido) VALUES ('Rafael Rocha', 'rara123');
 INSERT INTO USUARIO (nome, apelido) VALUES ('Raulivan Rodrigo', 'rara123'); -- 💣
 ```
-
-> ℹ️ O `DEFAULT` não pode ser "violado" — ele apenas preenche o que você não preencheu.
-
 ---
 
 ## 🎤 Artistas Cadastrados
@@ -97,7 +94,7 @@ Uma seleção cuidadosamente preenchida de acordo com os gostos musicais dos meu
 - 🤠 Lord Huron · 🎸 Radiohead · 🌈 Olivia Rodrigo
 - 💫 Taylor Swift · 🌙 Conan Gray · 🏳️‍⚧️ Urias
 - 🦋 Charli XCX · 🌊 Harry Styles · 🎻 Billie Eilish
-- 🌿 Nothing But Thieves · 🎺 Wild Youth · e mais...
+- 🌿 Nothing But Thieves · 🎺 Wild Youth 
 
 ---
 
@@ -112,7 +109,7 @@ Uma seleção cuidadosamente preenchida de acordo com os gostos musicais dos meu
 | 11 | `GROUP BY` + `HAVING` | Artistas com mais de um álbum |
 | 12 | `UNION` | Busca unificada de artistas e usuários |
 | 13 | `INTERSECT` | Usuários que criaram playlist E avaliaram |
-| 14 | `EXCEPT` | Músicas que nunca foram adicionadas a playlists 😔 |
+| 14 | `EXCEPT` | Músicas que nunca foram adicionadas a playlists |
 
 ---
 
